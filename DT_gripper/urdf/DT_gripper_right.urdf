@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="DT_gripper_right">
+  <link
+    name="Link_0_2">
+    <inertial>
+      <origin
+        xyz="0 -6.93889390390723E-18 0.0150172297115083"
+        rpy="0 0 0" />
+      <mass
+        value="0.035" />
+      <inertia
+        ixx="3.82502607446515E-05"
+        ixy="5.63004985316599E-13"
+        ixz="1.38024178340574E-21"
+        iyy="2.55682822465902E-05"
+        iyz="-2.99181481392226E-21"
+        izz="3.01786195512601E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DT_gripper/meshes/Link_0_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DT_gripper/meshes/Link_0_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link_5">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.105" />
+      <inertia
+        ixx="0.00551557251148511"
+        ixy="-3.2539665913117E-06"
+        ixz="5.9948811830428E-08"
+        iyy="0.00037706444753596"
+        iyz="5.19397616561902E-06"
+        izz="0.00526985090101087" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DT_gripper/meshes/Link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DT_gripper/meshes/Link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_5"
+    type="continuous">
+    <origin
+      xyz="0 0.031 0.029"
+      rpy="0 0 0" />
+    <parent
+      link="Link_0_2" />
+    <child
+      link="Link_5" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link_6">
+    <inertial>
+      <origin
+        xyz="6.69590480284477E-10 0.047312259543009 -0.00316696601621572"
+        rpy="0 0 0" />
+      <mass
+        value="0.032" />
+      <inertia
+        ixx="3.00405223867073E-05"
+        ixy="3.59327904026506E-13"
+        ixz="-2.56522219181268E-13"
+        iyy="1.76968982571648E-05"
+        iyz="2.33648286999841E-07"
+        izz="4.11020098914542E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DT_gripper/meshes/Link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DT_gripper/meshes/Link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_6"
+    type="continuous">
+    <origin
+      xyz="0 0.024 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_5" />
+    <child
+      link="Link_6" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Link_7">
+    <inertial>
+      <origin
+        xyz="0.000133910925717962 -0.150655801871864 0.0101036224635462"
+        rpy="0 0 0" />
+      <mass
+        value="0.105" />
+      <inertia
+        ixx="0.00551557251148511"
+        ixy="-3.2539665913117E-06"
+        ixz="-5.99488118303941E-08"
+        iyy="0.00037706444753596"
+        iyz="-5.19397616561914E-06"
+        izz="0.00526985090101087" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DT_gripper/meshes/Link_7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DT_gripper/meshes/Link_7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_7"
+    type="continuous">
+    <origin
+      xyz="0 0.095522 0.000754"
+      rpy="0 0 0" />
+    <parent
+      link="Link_6" />
+    <child
+      link="Link_7" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="Grip_2">
+    <inertial>
+      <origin
+        xyz="1.87532538436924E-05 1.46755248140451E-05 0.0363332648225437"
+        rpy="0 0 0" />
+      <mass
+        value="0.065" />
+      <inertia
+        ixx="7.71543996261288E-06"
+        ixy="2.60756284790869E-10"
+        ixz="-1.58733850085364E-09"
+        iyy="4.43641994241609E-06"
+        iyz="-1.64596780858671E-10"
+        izz="7.87085677073125E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DT_gripper/meshes/Grip_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DT_gripper/meshes/Grip_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_8"
+    type="continuous">
+    <origin
+      xyz="0 0 0.024"
+      rpy="0 0 0" />
+    <parent
+      link="Link_7" />
+    <child
+      link="Grip_2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="EE_2">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+  </link>
+  <joint
+    name="Joint_9"
+    type="fixed">
+    <origin
+      xyz="0 0 0.055"
+      rpy="0 0 0" />
+    <parent
+      link="Grip_2" />
+    <child
+      link="EE_2" />
+  </joint>
+</robot>
